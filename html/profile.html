@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/profile.css">
+    <title>Perfil - ReciclApp</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="profile.html">Perfil</a>
+            <a href="index.html">Cerrar Sesión</a>
+            <a href="guia_reciclaje.html">Guía de Reciclaje</a>
+            <a href="puntos_reciclaje.html">Puntos de Reciclaje</a>
+        </nav>
+    </header>
+
+    <section class="user-info">
+        <h1>Perfil</h1>
+        <p>Nombre: <span id="nombre"></span></p>
+        <p>Apellido: <span id="apellido"></span></p>
+        <p>Correo: <span id="correo"></span></p>
+    </section>
+
+    <section id="productos" class="user-products">
+        <h2>Tus Productos Publicados</h2>
+        <!-- Productos del usuario -->
+    </section>
+
+    <section id="subir-producto" class="user-products">
+        <h2>Subir Producto</h2>
+        <form action="../php/subir_producto.php" method="post" enctype="multipart/form-data">
+            <div>
+                <label for="nombre">Nombre del Producto:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div>
+                <label for="descripcion">Descripción:</label>
+                <textarea id="descripcion" name="descripcion" required></textarea>
+            </div>
+            <div>
+                <label for="imagen1">Imagen 1:</label>
+                <input type="file" id="imagen1" name="imagen1" required>
+            </div>
+            <div>
+                <label for="imagen2">Imagen 2:</label>
+                <input type="file" id="imagen2" name="imagen2">
+            </div>
+            <div>
+                <label for="imagen3">Imagen 3:</label>
+                <input type="file" id="imagen3" name="imagen3">
+            </div>
+            <button type="submit">Subir Producto</button>
+        </form>
+    </section>
+
+    <script src="../js/profile.js"></script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+#guia-reciclaje {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#guia-reciclaje h1 {
+    margin-bottom: 20px;
+}
+
+.sitio {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+    text-align: left;
+}
+
+.sitio h3 {
+    margin: 0;
+}
+
+.sitio p {
+    margin: 5px 0;
+}
+
+.sitio a {
+    color: #4CAF50;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.sitio a:hover {
+    text-decoration: underline;
+}
