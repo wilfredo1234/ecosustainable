@@ -9,9 +9,14 @@
     --color-texto-claro: #fff;
     --color-borde: #ccc;
     --color-hover: #45a049;
-
+    --color-card-login: #f0f0f0;
     --font-principal: 'Arial, sans-serif';
     --font-secundaria: 'Verdana, sans-serif';
+    --color-body: #2f4134;
+}
+
+body {
+    background-color: var(--color-body);
 }
 
 /* Estilos para el contenedor del formulario */
@@ -20,9 +25,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 40rem;
-    height: 50rem;
+    width: 25rem;
+    height: 30rem;
     margin: 0 auto;
+    background-color: var(--color-card-login);
+    border-radius: 0.5rem;
     margin-top: 10rem;
 }
 
@@ -48,7 +55,7 @@
 
 /* Estilos para los inputs del formulario */
 .form-container__input {
-    width: 22rem;
+    width: 15rem;
     padding: 10px;
     border: 1px solid var(--color-borde);
     border-radius: 3px;
@@ -75,11 +82,13 @@
 /* Estilos para el enlace de registro */
 .form-container__link {
     text-align: center;
-    color: var(--color-secundario);
+    color: #17181c;
     text-decoration: none;
     font-family: var(--font-principal);
 }
-
-.form-container__link:hover {
-    text-decoration: underline;
+.form-container__linkspan {
+    color: var(--color-principal);
+    margin-left: 0.5rem;
 }
+
+
